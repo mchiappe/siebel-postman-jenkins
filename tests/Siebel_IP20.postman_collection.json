@@ -1,0 +1,56 @@
+{
+	"info": {
+		"_postman_id": "02e098bd-698e-44d4-8892-c10ff32a7281",
+		"name": "Siebel IP20",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetHistoryByPlanName",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "Welcome1",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "SADMIN",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://siebelsai.docker.oraclecloud.com:4430/siebel/v1.0/migration/history?plan=P1",
+					"protocol": "https",
+					"host": [
+						"siebelsai",
+						"docker",
+						"oraclecloud",
+						"com"
+					],
+					"port": "4430",
+					"path": [
+						"siebel",
+						"v1.0",
+						"migration",
+						"history"
+					],
+					"query": [
+						{
+							"key": "plan",
+							"value": "P1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
