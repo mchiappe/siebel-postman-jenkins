@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "description": "Siebel Migration Test",
   "scripts": {
-    "api-tests-production": "newman run tests/Siebel_IP20.postman_collection.json"
+    "api-tests-production": "newman run tests/Siebel_IP20.postman_collection.json -k"
   },
   "author": "mchiappe",
   "dependencies": {
+    "elastic-apm-node": "^3.9.0",
     "newman": "^5.2.1"
   }
 }
