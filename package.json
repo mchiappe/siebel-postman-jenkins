@@ -1,0 +1,12 @@
+{
+  "name": "siebel-postman-jenkins",
+  "version": "1.0.0",
+  "description": "Siebel Migration Test",
+  "scripts": {
+    "api-tests-production": "newman run tests/Siebel_IP20.postman_collection.json"
+  },
+  "author": "mchiappe",
+  "dependencies": {
+    "newman": "^5.2.1"
+  }
+}
